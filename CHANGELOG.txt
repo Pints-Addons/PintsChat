@@ -1,0 +1,34 @@
+Pint's Chatbox - Changelog
+
+v1.0.2
+- WoW Forever: every character gets the standard tabs, also ones sharing a first name ("Pint ..."); and if the game
+  resets a character's chat, the tabs come back at the next login.
+- Tabs the game saved in the main box but didn't put back there (only Main showing) are docked again.
+  /pchat list shows each chat window's state.
+- If the game's own list of the main box's tabs can't be found, Pint's Chat shows the saved tabs itself and switches
+  between them.
+- WoW Forever: the scroll bar sits in its own strip inside the box's right edge (it was half in, half out).
+- The arrows (and mouse wheel) scroll the tabs again - they kept jumping back to the open tab.
+- Right-click a tab: Move left / Move right puts it where you want in the row (kept per character).
+- A tab with new messages since you last looked at it turns gold (and so does the arrow when it's scrolled out of
+  view). Log never lights up.
+- Log (when Pint's Chat switches the tabs itself): shows the combat log from before you opened it, with its filter bar
+  inside the box and no second border.
+- Log: the game's own combat log, with its "My actions" / "What happened to me?" bar on top, as in the game's tab.
+
+v1.0.1
+- The main box's tabs are drawn by Pint's Chat: all the same size, readable white names, arrows / mouse wheel for
+  tabs that don't fit.
+- Every character gets the standard tabs (Main, Log, Raid, Guild, Whisper, Party), not just the first one.
+- Tab names are easy to read again: outlined, on a dark band, and they no longer fade or turn grey when the chat
+  goes quiet.
+
+v1.0
+- First public release.
+- A clean, dark chat box with flat text tabs. The button column on the left is gone; its buttons live in one menu.
+- Ready-made tabs: Main, Raid, Guild, Whisper and Party, each showing the right messages.
+- A second box: move any tab into it (right-click a tab > Move to box 2) and back again.
+- Drag a tab to move its box, drag the corner to resize, and lock both boxes in place.
+- Type in either box: the input line follows the box you clicked.
+- Left-clicking a player's name opens their menu instead of starting a whisper (/pchat whisperclick to switch).
+- Copy chat, emotes, font size, jump to newest, and new tabs in either box, all from the menu.

@@ -1,0 +1,10 @@
+## Interface: 11508, 11509, 16001
+## Title: |cffd4a017Pint's|r Chatbox
+## Notes: A clean, dark chat box. The buttons on the left become one menu, tabs are flat text, and a second box holds any tabs you move there. /pchat
+## Author: Jake (Pint's Add-ons, built with Claude)
+## Version: 1.0.2
+## X-Curse-Project-ID: 1821551
+## X-License: GPL-3.0
+## SavedVariables: PintsChatDB
+
+PintsChat.lua
