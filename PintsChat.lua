@@ -828,8 +828,11 @@ end
 function PC.HideStrays()
 	local f = EnumerateFrames()
 	while f do
-		if f:IsVisible() and f:IsObjectType("Button") and f:GetParent() ~= hider and IsMinimize(f) then
-			local x, y = f:GetCenter()
+		-- (WoW Forever: some frames answer with secret values that can't be tested - those are skipped)
+		local okV, vis = pcall(f.IsVisible, f)
+		if okV and not (issecretvalue and issecretvalue(vis)) and vis == true and f:IsObjectType("Button") and f:GetParent() ~= hider and IsMinimize(f) then
+			local okC, x, y = pcall(f.GetCenter, f)
+			if not okC or (issecretvalue and (issecretvalue(x) or issecretvalue(y))) then x = nil end
 			if x and (Inside(x, y, ChatFrame1) or (box2 and box2:IsShown() and Inside(x, y, box2))) then Bury(f) end
 		end
 		f = EnumerateFrames(f)

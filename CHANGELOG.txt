@@ -1,5 +1,8 @@
 Pint's Chatbox - Changelog
 
+v1.0.3
+- WoW Forever: no more "secret boolean value" error while tidying stray minimize buttons off the chat box.
+
 v1.0.2
 - WoW Forever: every character gets the standard tabs, also ones sharing a first name ("Pint ..."); and if the game
   resets a character's chat, the tabs come back at the next login.
